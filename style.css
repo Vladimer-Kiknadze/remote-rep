@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 35px;
+  background-color: #333;
+  border-right: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav li {
+  margin-bottom: 5px;
+  color: black;
+}
+
+nav a {
+  color: rgb(198, 248, 255);
+  text-decoration: none;
+  padding: 120px;
+}
+
+nav a:hover {
+  color: #006eff;
+}
+
+h3 {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  box-shadow: 0 2px 8px 2px rgb(0, 0, 0);
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+  height: 25%;
+  width: 100%;
+  background-color: #4070f4;
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 70px;
+  border-radius: 50%;
+  border: 3px solid #00d9ff;
+  background-color: #ff0000;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #333;
+}
+
+.text-data .name {
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 50px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.text-data .job {
+  color: #0e4bf1;
+  margin-top: 10px;
+  margin-left: 130px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.text-data .about {
+  font-style: initial;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.buttons .button {
+  cursor: pointer;
+  font-size: large;
+  font-weight: 400;
+  border: none;
+  border-radius: 25px;
+  margin: 0 10px;
+  padding: 15px 24px;
+  background-color: rgb(122, 93, 255);
+}
+
+.buttons .button:hover {
+  background-color: #0e4bf1;
+}
